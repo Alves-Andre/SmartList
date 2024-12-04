@@ -84,7 +84,7 @@ class _AddItemModalState extends State<AddItemModal> {
               ),
               const SizedBox(height: 24),
               Text(
-                'Item name',
+                'Nome do Item',
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                   color: normalPrimaryBaseColorLight,
                 ),
@@ -93,7 +93,7 @@ class _AddItemModalState extends State<AddItemModal> {
               TextField(
                 controller: _nameController,
                 decoration: InputDecoration(
-                  hintText: 'Enter item name',
+                  hintText: 'Digite o nome do item',
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),
@@ -101,7 +101,7 @@ class _AddItemModalState extends State<AddItemModal> {
               ),
               const SizedBox(height: 16),
               Text(
-                'Quantity',
+                'Quantidade',
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                   color: normalPrimaryBaseColorLight,
                 ),
@@ -112,7 +112,7 @@ class _AddItemModalState extends State<AddItemModal> {
                 keyboardType: TextInputType.number,
                 inputFormatters: [FilteringTextInputFormatter.digitsOnly],
                 decoration: InputDecoration(
-                  hintText: 'Enter quantity',
+                  hintText: 'Digite a quantidade',
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),
@@ -125,7 +125,7 @@ class _AddItemModalState extends State<AddItemModal> {
                   viewModel: ActionButtonViewModel(
                     size: ActionButtonSize.medium,
                     style: ActionButtonStyle.primary,
-                    text: 'Save',
+                    text: 'Salvar',
                     onPressed: _saveItem,
                   ),
                 ),

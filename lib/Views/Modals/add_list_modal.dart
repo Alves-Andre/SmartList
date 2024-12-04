@@ -93,7 +93,7 @@ class _AddListModalState extends State<AddListModal> {
                   children: [
                     Expanded(
                       child: Text(
-                        widget.editingList != null ? 'Edit List' : 'Add New List',
+                        widget.editingList != null ? 'Editar Lista' : 'Adicionar Nova Lista',
                         style: Theme.of(context).textTheme.titleLarge?.copyWith(
                           color: normalPrimaryBaseColorLight,
                           fontWeight: FontWeight.w600,
@@ -108,7 +108,7 @@ class _AddListModalState extends State<AddListModal> {
                 ),
                 const SizedBox(height: 24),
                 Text(
-                  'List name',
+                  'Nome da Lista',
                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                     color: normalPrimaryBaseColorLight,
                   ),
@@ -117,7 +117,7 @@ class _AddListModalState extends State<AddListModal> {
                 TextField(
                   controller: _nameController,
                   decoration: InputDecoration(
-                    hintText: 'Enter list name',
+                    hintText: 'Digite o nome da lista',
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(8),
                     ),
@@ -125,7 +125,7 @@ class _AddListModalState extends State<AddListModal> {
                 ),
                 const SizedBox(height: 16),
                 Text(
-                  'Category',
+                  'Categoria',
                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                     color: normalPrimaryBaseColorLight,
                   ),
@@ -135,7 +135,7 @@ class _AddListModalState extends State<AddListModal> {
                   value: selectedCategory,
                   isExpanded: true,
                   decoration: InputDecoration(
-                    hintText: 'Select category',
+                    hintText: 'Selecione a categoria',
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(8),
                     ),
@@ -167,7 +167,7 @@ class _AddListModalState extends State<AddListModal> {
                 ),
                 const SizedBox(height: 16),
                 Text(
-                  'Description (optional)',
+                  'Descrição (opcional)',
                   style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                     color: normalPrimaryBaseColorLight,
                   ),
@@ -176,7 +176,7 @@ class _AddListModalState extends State<AddListModal> {
                 TextField(
                   controller: _descriptionController,
                   decoration: InputDecoration(
-                    hintText: 'Enter description',
+                    hintText: 'Digite a descrição',
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(8),
                     ),
@@ -187,7 +187,7 @@ class _AddListModalState extends State<AddListModal> {
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: _saveList,
-                    child: Text(widget.editingList != null ? 'Save Changes' : 'Create List'),
+                    child: Text(widget.editingList != null ? 'Salvar Alterações' : 'Criar Lista'),
                   ),
                 ),
               ],
